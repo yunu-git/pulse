@@ -1,12 +1,12 @@
 <script lang="ts">
     import {Sidebar, SidebarMenuItem} from '$lib/components/ui/sidebar';
-  import {
-      SidebarContent,
-      SidebarFooter,
-      SidebarGroup, SidebarGroupContent,
-      SidebarGroupLabel,
-      SidebarHeader, SidebarMenuButton
-  } from '$lib/components/ui/sidebar/index.js';
+    import {
+        SidebarContent,
+        SidebarFooter,
+        SidebarGroup, SidebarGroupContent,
+        SidebarGroupLabel,
+        SidebarHeader, SidebarMenuButton, SidebarRail
+    } from '$lib/components/ui/sidebar/index.js';
   import {House} from '@lucide/svelte';
   const pages = [
     {

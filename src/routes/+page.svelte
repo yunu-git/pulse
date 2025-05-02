@@ -1,8 +1,6 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/core";
-  import {Button} from '$lib/components/ui/button/index';
-  import {Alert, AlertDescription, AlertTitle} from '$lib/components/ui/alert/index.js';
-
+  import NotificationCard from "$lib/components/notification-card.svelte"
   let name = $state("");
   let greetMsg = $state("");
 
@@ -13,10 +11,6 @@
   }
 </script>
 
-<div class="container">
-  <Alert>
-    <AlertTitle>Hello Bro</AlertTitle>
-    <AlertDescription>Some sort of description</AlertDescription>
-  </Alert>
-  <Button>Yes</Button>
+<div class="grid auto-rows-min gap-4 md:grid-cols-3">
+  <NotificationCard/>
 </div>
